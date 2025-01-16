@@ -104,8 +104,11 @@ header {
     background-color: #1F2937;
     transition: background-color 0.5s;
 }
-
-@media (max-width: 769px) and (max-width: 1024px) {
+.haeder__hamburger--menu{
+    cursor: pointer;
+    color: #1F2937;
+}
+@media (max-width: 1024px) {
     .header__title{
         display: flex;
         align-items: center;
@@ -116,6 +119,14 @@ header {
         display: none;
     }
     .header__login--and--signup--container{
+        display: none;
+    }
+    .haeder__hamburger--menu{
+        display: block;
+    }
+}
+@media (min-width: 1025px){
+    .haeder__hamburger--menu{
         display: none;
     }
 }

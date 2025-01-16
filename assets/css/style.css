@@ -13,28 +13,77 @@ header {
     font-weight: bold;
 }
 
+.header__title p {
+    cursor: pointer;
+}
+
 .header__title span {
-    color:#64758B ;
+    color: #64758B;
     font-weight: 400;
 }
-.navbar{
 
-}
-.nav--list ul{
-display: flex;
-gap: 20px;
-}
-.nav--list ul li{
+/* .nav {} */
+
+.nav--list ul {
     display: flex;
-    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
-.header__login--and--signup--container{
+.nav--list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+    color: #4B5563;
+    font-size: 18px;
+}
+
+.nav--list ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7069EB;
+    width: 40px;
+    height: 22px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    animation: colorChange 1.5s infinite alternate;
+    margin-left: -8px;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #7069EB;
+    }
+
+    50% {
+        background-color: #9B96F1;
+    }
+
+    100% {
+        background-color: #7069EB;
+
+    }
+}
+
+.nav--list ul li i {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__login--and--signup--container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+
 .header__signup--button {
     width: 90px;
     height: 40px;
@@ -46,10 +95,27 @@ gap: 20px;
     justify-content: center;
     transition: background-color 0.5s;
 }
-.header__login--and--signup--container p{
+
+.header__login--and--signup--container p {
     cursor: pointer;
 }
-.header__signup--button:hover{
+
+.header__signup--button:hover {
     background-color: #1F2937;
     transition: background-color 0.5s;
+}
+
+@media (max-width: 769px) and (max-width: 1024px) {
+    .header__title{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .nav--list {
+        display: none;
+    }
+    .header__login--and--signup--container{
+        display: none;
+    }
 }

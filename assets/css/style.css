@@ -1,0 +1,55 @@
+body {}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Bricolage Grotesque Variable', sans-serif;
+}
+
+.header__title {
+    font-size: 18px;
+    color: #1E293B;
+    font-weight: bold;
+}
+
+.header__title span {
+    color:#64758B ;
+    font-weight: 400;
+}
+.navbar{
+
+}
+.nav--list ul{
+display: flex;
+gap: 20px;
+}
+.nav--list ul li{
+    display: flex;
+    list-style-type: none;
+}
+
+.header__login--and--signup--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.header__signup--button {
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+}
+.header__login--and--signup--container p{
+    cursor: pointer;
+}
+.header__signup--button:hover{
+    background-color: #1F2937;
+    transition: background-color 0.5s;
+}

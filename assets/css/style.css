@@ -1,4 +1,4 @@
-body {}
+/* body {} */
 
 header {
     display: flex;
@@ -160,6 +160,7 @@ header {
 
     .hamburger-toggle:checked~.nav--list {
         display: flex;
+        width: 100%;
     }
 
     .header__login--and--signup--container {
@@ -328,6 +329,7 @@ header {
     .hero__section--left {
         width: 100%;
         /* padding: 0px 30px; */
+        /* margin-top: 150px; */
     }
 
     .hero__section--left h1 {
@@ -548,7 +550,7 @@ header {
         height: 60px;
     }
 }
-/* STAR footer */
+/* START footer */
 footer {
     font-family: 'Bricolage Grotesque Variable', sans-serif;
     color: #64758B;

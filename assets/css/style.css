@@ -529,11 +529,13 @@ header {
     justify-content: center;
     border-radius: 5px;
 }
-@media (max-width: 1024px){
-    .technologies__section--card h1{
+
+@media (max-width: 1024px) {
+    .technologies__section--card h1 {
         font-size: 22px;
     }
-    .technologies__section--card h3{
+
+    .technologies__section--card h3 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -542,14 +544,17 @@ header {
         padding: 0px 50px;
         text-align: center;
     }
+
     .technologies__section--svg--icons {
         padding: 0px 20px;
     }
-    .technologies__section--svg--icons svg{
+
+    .technologies__section--svg--icons svg {
         width: 60px;
         height: 60px;
     }
 }
+
 /* START footer */
 footer {
     font-family: 'Bricolage Grotesque Variable', sans-serif;
@@ -557,7 +562,7 @@ footer {
     margin-top: 40px;
 }
 
-.footer--copyright p{
+.footer--copyright p {
     display: flex;
     align-items: center;
     justify-content: center;

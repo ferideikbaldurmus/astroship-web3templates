@@ -336,14 +336,6 @@ header {
 .hero__section--left--github--button:hover {
     background-color: #F3F4F6;
 }
-
-/* .hero__section--right {
-
-}
-
-.hero__section--right img {
-
-} */
 @media (max-width: 1024px) {
     .hero__section {
         flex-direction: column;
@@ -384,26 +376,39 @@ header {
 
 /* START features__section */
 .features__section {
-    padding: 0px 80px;
     font-family: 'Bricolage Grotesque Variable', sans-serif;
+    /* width: 100%; */
+/* max-width: 1000px; */
 }
-
+.features__section--container{
+    margin: 0;
+    padding: 0;
+    margin-right: 200px;
+}
 .features__section--titles {
     color: #000000;
     font-size: 30px;
-
+    width: 100%;
+max-width: 1000px;
+margin: auto;
 }
 
 .features__section--titles h4 {
     color: rgb(71, 85, 105);
     font-size: 18px;
-    margin-top: -25px;
+    line-height: 0.1;
     font-weight: 400;
 }
 
 .features__section--list--container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    width: 100%;
+max-width: 1000px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
 }
 
 /* .features__section--list--container {
@@ -451,10 +456,6 @@ header {
 }
 
 @media (max-width: 1024px) {
-
-    /* .features__section{
-        width: 100%;
-    } */
     .features__section--titles {
         width: 100%;
     }
@@ -467,18 +468,11 @@ header {
     .features__section--list {
         flex-direction: column;
         align-items: flex-start;
-        /* gap: 10px; */
     }
 
     .features__section--list--icon {
         margin-left: -40px;
     }
-
-    /* .features__section--list--icon i{
-   }
-   .features__section--list--content {
-
-   } */
 }
 
 /* START technologies__section */

@@ -396,7 +396,7 @@ margin: auto;
 .features__section--titles h4 {
     color: rgb(71, 85, 105);
     font-size: 18px;
-    line-height: 0.1;
+    line-height: 1;
     font-weight: 400;
 }
 
@@ -458,23 +458,49 @@ grid-gap: 20px;
 @media (max-width: 1024px) {
     .features__section--titles {
         width: 100%;
+        margin-left: 30px;
     }
 
     .features__section--list--container {
-        grid-template-columns: 1fr;
+        display: grid;
+        /* grid-template-columns: 1fr; */
         width: 100%;
+        /* align-items: center;
+        justify-content: center; */
+        margin-left: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 
-    .features__section--list {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    /* .features__section--list {
+       
+  
+    } */
 
     .features__section--list--icon {
-        margin-left: -40px;
+        margin-left: 5px;
+  
     }
+    /* .features__section--list--content{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
 }
-
+@media (max-width: 768px) {
+    .features__section--list--container {
+        display: grid;
+        /* grid-template-columns: 1fr; */
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+     }
+     .features__section--list--content {
+        width: 100%;
+     }
+  
+}
 /* START technologies__section */
 .technologies__section {
     font-family: 'Bricolage Grotesque Variable', sans-serif;

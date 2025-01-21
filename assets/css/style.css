@@ -158,6 +158,7 @@ header {
         justify-content: flex-start;
         width: 100%;
         z-index: 1;
+        padding: 0px 10px;
     }
 
     .nav--list {
@@ -177,6 +178,7 @@ header {
         /* margin: 20px 0px;
         padding: 0px 8px; */
         /* margin: 0px; */
+        padding: 0px 20px;
     }
 
     .nav--list ul li {
@@ -471,7 +473,11 @@ grid-gap: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-
+.nav--list{
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 500px; */
+}
     /* .features__section--list {
        
   

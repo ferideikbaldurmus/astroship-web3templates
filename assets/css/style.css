@@ -420,9 +420,7 @@ header {
     grid-gap: 20px;
 }
 
-/* .features__section--list--container {
-
-} */
+/* .features__section--list--container {} */
 
 .features__section--list {
     display: flex;
